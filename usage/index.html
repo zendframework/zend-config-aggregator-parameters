@@ -12,6 +12,7 @@
     <title>Usage - zend-config-aggregator-parameters</title>
 
     <link rel="stylesheet" href="../css/styles-18b942728f.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js"></script>
 </head>
 <body id="page-top">
 
@@ -66,7 +67,7 @@
                     
     <div class="subnavigation hidden-print">
         <h4 class="subnavigation__title">
-            <a href="..">zend-config-aggregator-parameters</a>
+            <a href="">zend-config-aggregator-parameters</a>
         </h4>
 
         <h5 class="subnavigation__subtitle">Table of Contents</h5>
@@ -75,7 +76,7 @@
             
                 
                     <li class="subnavigation__list-item subnavigation__list-item--active">
-                        <a href="./" class="subnavigation__link">Usage</a>
+                        <a href="usage/" class="subnavigation__link">Usage</a>
                     </li>
                 
             
@@ -155,7 +156,7 @@
         <li><a href="https://docs.zendframework.com/">Documentation</a></li>
 
         
-            <li><a href="..">zend-config-aggregator-parameters</a></li>
+            <li><a href="">zend-config-aggregator-parameters</a></li>
 
             
 
@@ -223,28 +224,28 @@ var_dump($aggregator-&gt;getMergedConfig());</code></pre>
 <p>The result of the above will be:</p>
 <pre class="codehilite"><code class="language-php">array(5) {
   'parameter_usage' =&gt;
-  string(3) &quot;bar&quot;
+  string(3) "bar"
   'parameter_name' =&gt;
-  string(5) &quot;%foo%&quot;
+  string(5) "%foo%"
   'recursive_parameter_usage' =&gt;
-  string(3) &quot;qoo&quot;
+  string(3) "qoo"
   'parameterized_parameter_usage' =&gt;
-  string(3) &quot;bar&quot;
+  string(3) "bar"
   'parameters' =&gt;
   array(4) {
     'foo' =&gt;
-    string(3) &quot;bar&quot;
+    string(3) "bar"
     'bar' =&gt;
     array(2) {
       'baz' =&gt;
-      string(3) &quot;qoo&quot;
+      string(3) "qoo"
       'quux' =&gt;
-      string(3) &quot;bar&quot;
+      string(3) "bar"
     }
     'bar.baz' =&gt;
-    string(3) &quot;qoo&quot;
+    string(3) "qoo"
     'bar.quux' =&gt;
-    string(3) &quot;bar&quot;
+    string(3) "bar"
   }
 }</code></pre>
 
@@ -256,7 +257,7 @@ var_dump($aggregator-&gt;getMergedConfig());</code></pre>
         
         <li class="page-nav__item">
             
-                <a rel="prev" class="page-nav__link page-nav__link--prev" href="..">
+                <a rel="prev" class="page-nav__link page-nav__link--prev" href="">
                     <i class="fa fa-chevron-left"></i> Previous
                 </a>
             
@@ -296,7 +297,7 @@ var_dump($aggregator-&gt;getMergedConfig());</code></pre>
                     
     <div class="subnavigation hidden-print">
         <h4 class="subnavigation__title">
-            <a href="..">zend-config-aggregator-parameters</a>
+            <a href="">zend-config-aggregator-parameters</a>
         </h4>
 
         <h5 class="subnavigation__subtitle">Table of Contents</h5>
@@ -305,7 +306,7 @@ var_dump($aggregator-&gt;getMergedConfig());</code></pre>
             
                 
                     <li class="subnavigation__list-item subnavigation__list-item--active">
-                        <a href="./" class="subnavigation__link">Usage</a>
+                        <a href="usage/" class="subnavigation__link">Usage</a>
                     </li>
                 
             
@@ -383,9 +384,8 @@ var_dump($aggregator-&gt;getMergedConfig());</code></pre>
         var base_url = '..',
             siteName = 'zend-config-aggregator-parameters';
     </script>
-    <script src="../js/scripts-0bcb0a3bb3.js"></script>
-        <script src="../search/require.js"></script>
-        <script src="../search/search.js"></script>
+    <script src="../js/scripts-edc4cfa790.js"></script>
+        <script src="../search/main.js"></script>
 
     
     <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
@@ -414,6 +414,14 @@ var_dump($aggregator-&gt;getMergedConfig());</code></pre>
             </div>
         </div>
     </div>
+
+<script>
+// Anchors
+anchors.options.placement = 'left';
+anchors.add(
+    '.content h1:not(.content__title), .content h2, .content > h3, .content h4, .content h5'
+);
+</script>
 
 
 
