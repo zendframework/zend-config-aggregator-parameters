@@ -213,7 +213,7 @@ parameters as well.</p>
 double-escape the percentage signs: <code>%%name%%</code>. Failure to do so will result in
 an exception when post-processing the configuration.</p>
 <p>As a self-contained example:</p>
-<pre class="codehilite"><code class="language-php">use Zend\ConfigAggregator\ArrayProvider;
+<p> <pre class=codehilite><code class=language-php>use Zend\ConfigAggregator\ArrayProvider;
 use Zend\ConfigAggregator\ConfigAggregator;
 use Zend\ConfigAggregatorParameters\ParameterPostProcessor;
 
@@ -238,35 +238,34 @@ $aggregator = new ConfigAggregator(
     ]
 );
 
-var_dump($aggregator-&gt;getMergedConfig());</code></pre>
-
+var_dump($aggregator-&gt;getMergedConfig());</code></pre></p>
 <p>The result of the above will be:</p>
-<pre class="codehilite"><code class="language-php">array(5) {
+<p> <pre class=codehilite><code class=language-php>array(5) {
   'parameter_usage' =&gt;
-  string(3) "bar"
+  string(3) &quot;bar&quot;
   'parameter_name' =&gt;
-  string(5) "%foo%"
+  string(5) &quot;%foo%&quot;
   'recursive_parameter_usage' =&gt;
-  string(3) "qoo"
+  string(3) &quot;qoo&quot;
   'parameterized_parameter_usage' =&gt;
-  string(3) "bar"
+  string(3) &quot;bar&quot;
   'parameters' =&gt;
   array(4) {
     'foo' =&gt;
-    string(3) "bar"
+    string(3) &quot;bar&quot;
     'bar' =&gt;
     array(2) {
       'baz' =&gt;
-      string(3) "qoo"
+      string(3) &quot;qoo&quot;
       'quux' =&gt;
-      string(3) "bar"
+      string(3) &quot;bar&quot;
     }
     'bar.baz' =&gt;
-    string(3) "qoo"
+    string(3) &quot;qoo&quot;
     'bar.quux' =&gt;
-    string(3) "bar"
+    string(3) &quot;bar&quot;
   }
-}</code></pre>
+}</code></pre></p>
 
 
 
@@ -296,7 +295,7 @@ var_dump($aggregator-&gt;getMergedConfig());</code></pre>
     <div class="help-wanted">
         <p>
             Found a mistake or want to contribute to the documentation?
-            <a href="https://github.com/zendframework/zend-config-aggregator-parameters/edit/master/docs/usage.md" target="_blank" class="help-wanted__link">
+            <a href="https://github.com/zendframework/zend-config-aggregator-parameters/edit/master/docs/book/usage.md" target="_blank" class="help-wanted__link">
                 Edit this page on GitHub!
             </a>
         </p>
