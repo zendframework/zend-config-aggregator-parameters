@@ -1,5 +1,9 @@
 # zend-config-aggregator-parameters
 
+> ## Repository abandoned 2019-12-31
+>
+> This repository has moved to laminas/laminas-config-aggregator-parameters.
+
 [![Build Status](https://secure.travis-ci.org/zendframework/zend-config-aggregator-parameters.svg?branch=master)](https://secure.travis-ci.org/zendframework/zend-config-aggregator-parameters)
 [![Coverage Status](https://coveralls.io/repos/github/zendframework/zend-config-aggregator-parameters/badge.svg?branch=master)](https://coveralls.io/github/zendframework/zend-config-aggregator-parameters?branch=master)
 
